@@ -1,17 +1,20 @@
 html{
-    background-color: grey;
+    background-color: #F6EFDB;
 }
 h1{
     font-family: Arial, Helvetica, sans-serif;
-    color: lightblue;
+    color: #822f23;
 }
 h2{
-    color: lightblue;
+    color: #822f23;
     font-family: Arial, Helvetica, sans-serif
     
 }
-h2+ul{
-    background-color: lightpink;
+ul{
+    background-color: #A1945F;
+}
+ol{
+    background-color: #A1945F;
 }
 body{
     font-size: 16px;
@@ -19,18 +22,17 @@ body{
 h1{
     font-size: 3em;
 }
-p{
-color:purple ;
-    font-size:2em;
+P{
+    color: #A1945F;
 }
 h1:first-letter{ 
     font-size: 6em;
 }
 .subhead{
-    color: lightyellow;
+    color: #822f23;
 }
 h1:hover{
-    background-color:royalblue;
+    background-color:#F1A49F;
 }
 a[href="https://qau.edu.pk/"]:hover
 {
@@ -43,10 +45,16 @@ a[href="https://cs.qau.edu.pk/"]:hover{
 }
 hr{
     height: 12px;
-    background-color: lightcoral;
+    background-color: #822f23;
 }
 footer{
+    color: #d67d63;
     font-size: 2em;
 }
-
+.PFP{
+    border:100px #F1A49F;
+}
+.link{
+    color: yellow;
+}
 
