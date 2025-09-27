@@ -37,11 +37,15 @@ h1:hover{
 a[href="https://qau.edu.pk/"]:hover
 {
     
-background-color: lightgreen;
+background-color: #822f23;
 }
 a[href="https://cs.qau.edu.pk/"]:hover{
-    background-color: yellow;
-    font-size: 2em;
+    background-color: #822f23;
+    
+}
+a[href="https://en.wikipedia.org/wiki/Islamabad#History"]:hover{
+    background-color: #822f23;
+    
 }
 hr{
     height: 12px;
