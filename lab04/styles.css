@@ -1,0 +1,70 @@
+html{
+    background-image: url(background.jpg);
+
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightgreen;
+    font-family:serif;
+}
+h2{
+    color:lightgreen;
+    font-family: Arial, Helvetica, sans-serif
+    
+}
+.PFP{
+    padding-top: 5%;
+    padding-left: 40%;
+}
+.intro{
+    padding-left: 35%;
+    
+
+}
+ul{
+    color: lightskyblue;
+}
+ol{
+    color: lightskyblue;
+}
+body{
+    font-size: 16px;
+}
+h1{
+    font-size: 3em;
+}
+P{
+    font-size: 2em;
+    color:lightskyblue;
+}
+h1:first-letter{ 
+    font-size: 6em;
+}
+.subhead{
+    color: lightgreen;
+    font-family: serif;
+}
+a[href="https://qau.edu.pk/"]:hover
+{
+    
+background-color: darkcyan;
+}
+a[href="https://cs.qau.edu.pk/"]:hover{
+    background-color:darkcyan;
+    
+}
+a[href="https://en.wikipedia.org/wiki/Islamabad#History"]:hover{
+    background-color: darkcyan;
+    
+}
+
+hr{
+    height: 12px;
+    background-color:darkcyan;
+}
+footer{
+    color: darkgray;
+    font-size: 2em;
+}
+
+
