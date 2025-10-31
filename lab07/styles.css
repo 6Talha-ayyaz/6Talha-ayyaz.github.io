@@ -1,0 +1,170 @@
+/* General Styling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Grid Layout */
+.container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "L L L"
+    "N N N"
+    "H H H"
+    "S B B"
+    "S B B"
+    "S B B"
+    "F F F";
+}
+
+/* Logo */
+.logo {
+  grid-area: L;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.logo img {
+  height: 60px;
+  background: none;
+}
+
+/* Navbar */
+.navbar {
+  grid-area: N;
+  background-color: #00563B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
+  position: sticky;  /* Makes navbar stick to top */
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.nav {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav1 {
+  background-color: #FFD700;
+  border-radius: 25px;
+  padding: 8px 18px;
+  color: #003300;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.nav1:hover {
+  background-color: #fff;
+  color: #00563B;
+}
+
+/* Header */
+.head {
+  grid-area: H;
+  background-color: #E8F5E9;
+  color: #003300;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Sidebar */
+.sidebar {
+  grid-area: S;
+  background-color: #F0F0F0;
+  padding: 15px;
+  border-right: 3px solid #00563B;
+}
+.sidebar h3 {
+  text-align: center;
+  color: #00563B;
+  margin-bottom: 10px;
+}
+.sidebar ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar a {
+  text-decoration: none;
+  color: #003300;
+  font-weight: 600;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+.sidebar a:hover {
+  background-color: #C8E6C9;
+  border-color: #00563B;
+  transform: translateX(5px);
+}
+
+/* Main Body */
+.body {
+  grid-area: B;
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-left: 3px solid #00563B;
+}
+.body section {
+  margin-bottom: 25px;
+}
+.body h2 {
+  color: #00563B;
+  border-bottom: 2px solid #FFD700;
+  padding-bottom: 5px;
+}
+.profile-pic {
+  float: right;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: 0 0 10px 15px;
+  object-fit: cover;
+  border: 3px solid #00563B;
+}
+
+/* Footer */
+.footer {
+  grid-area: F;
+  background-color: #003300;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "L"
+      "N"
+      "H"
+      "S"
+      "B"
+      "F";
+  }
+  .nav {
+    flex-wrap: wrap;
+  }
+  .profile-pic {
+    float: none;
+    display: block;
+    margin: 10px auto;
+  }
+}
