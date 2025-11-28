@@ -93,9 +93,9 @@ ph.style.backgroundColor="green";
 }
 else
 {
-  ph.style.backgroundColor="red";  
+  ph.style.backgroundColor="red";  a
 }})
-let res2=/^{8}%/;
+let res2 = /^(?=.*[0-9])[a-z0-9]{8}$/;
 let pass=document.getElementById('password');
 pass.addEventListener("input",function(){
     if(res2.test(pass.value))
