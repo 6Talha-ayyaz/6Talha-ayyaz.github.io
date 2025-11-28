@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lazy Loading Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Lazy Loading Task</h1>
+
+  <!-- First image loads normally -->
+  <img src="images/image1.png" alt="img1">
+
+  <!-- Other images lazy loaded -->
+  <img data-src="images/image2.png" alt="img2" class="lazy">
+  <img data-src="images/image3.png" alt="img3" class="lazy">
+  <img data-src="images/image4.png" alt="img4" class="lazy">
+  <img data-src="images/image5.png" alt="img5" class="lazy">
+
+
+  <script>
+    const lazyImages = document.querySelectorAll('.lazy');
+
+const lazyLoad = (target) => {
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.getAttribute('data-src');
+        img.removeAttribute('data-src'); // Remove after loading
+        observer.unobserve(img);
+      }
+    });
+  });
+  observer.observe(target);
+};
+
+lazyImages.forEach(lazyLoad);
+
+  </script>
+</body>
+</html>
